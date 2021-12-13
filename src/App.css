@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  outline: none;
+  cursor: pointer;
+  border: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main {
+  padding: 2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 2rem;
+  background-color: lightgrey;
+  padding: 1em;
+}
+
+.navbar-logo {
+  color: darkslategrey;
+}
+
+.navbar-title {
+  margin: 0 0.3em;
+  font-weight: bold;
+}
+
+.navbar-count {
+  display: inline-block;
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: darkslategrey;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.add-input {
+  width: 16rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  padding: 0 0.3rem;
+  margin-right: 0.5em;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-btn {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.3rem 0.9rem;
+  margin-top: 1em;
+  border-radius: 5px;
+}
+
+.habit {
+  font-size: 2rem;
+  padding: 0.3em 0;
+  list-style: none;
+}
+
+.habit-count {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  margin-left: 0.3em;
+  margin-right: 0.5em;
+  background-color: darkseagreen;
+  color: white;
+  border-radius: 50%;
+}
+
+.habit-button {
+  font-size: 2rem;
+  margin: 0 0.15em;
+  background-color: transparent;
+}
+
+.habit-button:hover {
+  opacity: 0.8;
+}
+
+.habit-increase,
+.habit-decrease {
+  color: goldenrod;
+}
+
+.habit-delete {
+  font-size: 1.5rem;
+  color: orangered;
+}
+
+.reset-btn {
+  background-color: darkslategrey;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.3rem 0.9rem;
+  margin-top: 1em;
+  border-radius: 5px;
 }
